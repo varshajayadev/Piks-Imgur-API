@@ -17,7 +17,10 @@ public interface ApiInterface {
     //Download all the gallery images
     @GET("{pageCount}.json")
     Call<ImageResponse> getGallery(@Header("Authorization") String client_id, @Path("pageCount") int pCount);
+
     //Download an image
     @GET("{id}h.jpg")
     Call<ResponseBody> getImage(@Path("id") String imageid);
+
 }
+

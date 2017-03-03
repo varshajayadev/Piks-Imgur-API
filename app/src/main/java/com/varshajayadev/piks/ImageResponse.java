@@ -36,18 +36,27 @@ public class ImageResponse {
         String points;
         @SerializedName("is_album")
         boolean is_Album;
+        @SerializedName("ups")
+        int ups;
+        @SerializedName("downs")
+        int downs;
         @SerializedName("cover")
         String cover;
         @SerializedName("mp4")
         String mp4_Link;
+        @SerializedName("cover_height")
+        int cover_height;
 
         public Image(){
             image_ID = "";
             image_Title = "";
             points = "";
             is_Album = false;
+            ups = -1;
+            downs = -1;
             cover = "";
             mp4_Link = "";
+            cover_height = 0;
         }
 
         public String getImage_ID() {
@@ -82,6 +91,22 @@ public class ImageResponse {
             this.is_Album = is_Album;
         }
 
+        public int getUps() {
+            return ups;
+        }
+
+        public void setUps(int ups) {
+            this.ups = ups;
+        }
+
+        public int getDowns() {
+            return downs;
+        }
+
+        public void setDowns(int downs) {
+            this.downs = downs;
+        }
+
         public String getCover() {
             return cover;
         }
@@ -97,5 +122,14 @@ public class ImageResponse {
         public void setMp4_Link(String mp4_Link) {
             this.mp4_Link = mp4_Link;
         }
+
+        public int getCover_height() {
+            return cover_height;
+        }
+
+        public void setCover_height(int cover_height) {
+            this.cover_height = cover_height;
+        }
+
     }
 }

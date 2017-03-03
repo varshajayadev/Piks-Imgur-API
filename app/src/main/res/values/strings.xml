@@ -1,4 +1,10 @@
 <resources>
     <string name="app_name">Piks</string>
-    <string name="clientID"></string>
+    <string name="client_id">Client-ID 13af23d1cdffdbb</string>
+    <string name="ok">OK</string>
+    <string name="no_connection">No Internet connection!</string>
+    <string name="api_error">Unable to download images. Check Internet connection</string>
+    <string name="gallery_api">https://api.imgur.com/3/gallery/hot/viral/</string>
+    <string name="image_api">http://i.imgur.com/</string>
+    <string name="zero">0</string>
 </resources>
